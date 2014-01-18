@@ -1,0 +1,19 @@
+#translations-index
+  .row.with-form
+    .col-md-8.col-md-offset-2
+      = render 'form', translation: @translation
+  .row.with-table
+    .col-md-8.col-md-offset-2
+      .panel.panel-default
+        .panel-heading
+          .panel-title Recent Translations
+        table
+          thead
+            tr
+              th English
+              th Pig Latin
+          tbody
+            - @translations.each do |translation|
+              tr
+                td = translation.english
+                td = translation.pig_latin

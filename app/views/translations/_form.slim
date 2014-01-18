@@ -1,0 +1,12 @@
+ul.nav.nav-tabs
+  li
+    a href="#english" data-toggle=:tab English to Pig Latin
+  li
+    a href="#pig_latin" data-toggle=:tab Pig Latin to English
+.tab-content
+  - [:english, :pig_latin].each do |l|
+    .tab-pane id=l
+      = form_for translation do |f|
+        .form-group
+          = f.text_field l, class: 'form-control'
+        button.btn.btn-primary type=:submit Translate
