@@ -1,9 +1,18 @@
 language: ruby
 rvm:
-  - "1.9.3"
-  - "2.0.0"
+- 1.9.3
+- 2.0.0
 before_script:
-  - psql -c "create user pig_latin with password 'igpay_atinlay' CREATEDB" -U postgres
-  - RAILS_ENV=test bundle exec rake db:test:load db:migrate
+- psql -c "create user pig_latin with password 'igpay_atinlay' CREATEDB" -U postgres
+- RAILS_ENV=test bundle exec rake db:test:load db:migrate
 script:
-  - RAILS_ENV=test bundle exec rake test:all
+- RAILS_ENV=test bundle exec rake test:all
+deploy:
+  provider: heroku
+  api_key:
+    secure: VMM2qQoG6wsXmgllfa/qHH4rV+2nrCqiHpOZVqZdXyASUEPlOa/wmB6wZyNIeFBQQdlMuGaD5Qj0E9JwHyQPwwFvw+jf1mpDKk/OR1T14cealtsujnaOc2b9DO6LdDUr+XwluBAY8NKhVPnGOf/yhp3QEGFp4HCVqOyXsTxFQCw=
+  app: pig_latin
+  on:
+    rvm: 2.0.0
+    repo: joshwlewis/pig_latin
+  run: "rake db:migrate"
