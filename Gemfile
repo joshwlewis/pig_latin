@@ -30,6 +30,6 @@ group :development do
 end
 
 group :test do
-  gem "minitest-rails-shoulda", '~> 0.4.1'
+  gem "minitest-rails", '~> 0.9.0'
   gem 'coveralls', require: false
 end

@@ -4,6 +4,6 @@ rvm:
   - "2.0.0"
 before_script:
   - psql -c "create user pig_latin with password 'igpay_atinlay' CREATEDB" -U postgres
-  - RAILS_ENV=test bundle exec rake db:setup db:migrate
+  - RAILS_ENV=test bundle exec rake db:test:load db:migrate
 script:
-  - RAILS_ENV=test bundle exec rake test
+  - RAILS_ENV=test bundle exec rake test:all
