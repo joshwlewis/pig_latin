@@ -11,7 +11,7 @@ deploy:
   provider: heroku
   api_key:
     secure: VMM2qQoG6wsXmgllfa/qHH4rV+2nrCqiHpOZVqZdXyASUEPlOa/wmB6wZyNIeFBQQdlMuGaD5Qj0E9JwHyQPwwFvw+jf1mpDKk/OR1T14cealtsujnaOc2b9DO6LdDUr+XwluBAY8NKhVPnGOf/yhp3QEGFp4HCVqOyXsTxFQCw=
-  app: pig_latin
+  app: pig-latin
   on:
     rvm: 2.0.0
     repo: joshwlewis/pig_latin
