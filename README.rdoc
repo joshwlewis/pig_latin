@@ -1,28 +1,25 @@
-== README
+# Pig Latin Translator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple app intended to demonstrate a TDD workflow in Rails with
+Minitest.
 
-Things you may want to cover:
+[![Build Status](https://travis-ci.org/joshwlewis/pig_latin.png?branch=master)](https://travis-ci.org/joshwlewis/pig_latin)
 
-* Ruby version
+### Getting started
 
-* System dependencies
+You'll need a pretty simple stack to run this locally:
 
-* Configuration
+- ruby 1.9.3 or 2.0.0 (I reccomend installing with rbenv)
+- rubygems (Auto-installed by rbenv)
+- postgres 9.x
 
-* Database creation
+Once you have all that run:
 
-* Database initialization
+```bash
+bundle install
+bundle exec rake db:setup
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Now, you are setup. You can run the dev server with `rai`ls s`, run the test
+suite with `bundle exec rake test`, or watch files and run tests automatically
+with `bundle exec guard`.
