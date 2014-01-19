@@ -20,6 +20,6 @@ bundle install
 bundle exec rake db:setup
 ```
 
-Now, you are setup. You can run the dev server with `rai`ls s`, run the test
+Now, you are setup. You can run the dev server with `rails s`, run the test
 suite with `bundle exec rake test`, or watch files and run tests automatically
 with `bundle exec guard`.

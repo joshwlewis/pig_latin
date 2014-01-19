@@ -31,4 +31,5 @@ end
 
 group :test do
   gem "minitest-rails-shoulda", '~> 0.4.1'
+  gem 'coveralls', require: false
 end
