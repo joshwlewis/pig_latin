@@ -4,6 +4,7 @@ This is a simple app intended to demonstrate a TDD workflow in Rails with
 Minitest.
 
 [![Build Status](https://travis-ci.org/joshwlewis/pig_latin.png?branch=master)](https://travis-ci.org/joshwlewis/pig_latin)
+[![Coverage Status](https://coveralls.io/repos/joshwlewis/pig_latin/badge.png)](https://coveralls.io/r/joshwlewis/pig_latin)
 
 ### Getting started
 
