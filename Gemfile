@@ -24,6 +24,7 @@ group :production do
 end
 
 group :development, :test do
+  gem "minitest-rails", '~> 0.9.0'
   gem 'pry'
   gem 'debugger'
 end
@@ -36,6 +37,5 @@ group :development do
 end
 
 group :test do
-  gem "minitest-rails", '~> 0.9.0'
   gem 'coveralls', require: false
 end
